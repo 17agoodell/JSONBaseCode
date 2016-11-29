@@ -1,0 +1,218 @@
+﻿{
+
+
+"noChoice": {
+		"Text":"<i>You wake up in a panic.</i> 'Where am I?'<i> You look around.</i> What should you do?",
+		"choices": [
+			{
+				"choice":"Get up.",
+				"result":"getUp"
+			},
+			{
+				"choice":"Remain in bed.",
+				"result":"remainInBed"
+			}
+		]
+
+	},
+
+"getUp": {
+		"Text":"<i>You stand up and walk to the door, exiting the room. You go to the main desk, a woman greeting you.</i>\n" +
+		"Desk worker: Miss Rine? You're awake!",
+	"choices": [
+		{
+			"choice":"What year is it?",
+			"result":"whatYear"
+		},
+		{
+			"choice":"Why am I here?",
+			"result":"whyAmIHere"
+		},
+		{
+			"choice":"Can I leave?",
+			"result":"canILeave"
+		}
+	]
+
+},
+
+	"whatYear": {
+		"Text":"Desk worker: You’ve been asleep for quite some time. It’s 2014. Just turned fall a few days ago.\n" +
+		"'How long have I been out?'\n" +
+		"When did I get here?\n" +
+		"Desk worker: Some time in 2008, I believe. You’ve been one of our few chronic patients.",
+		"choices": [
+			{
+				"choice":"Why am I here?",
+				"result":"whyAmIHere"
+			},
+			{
+				"choice":"Can I leave?",
+				"result":"canILeave"
+			}
+
+		]
+
+	},
+
+	"whyAmIHere": {
+		"Text":"Desk worker: Dear, you’ve been in a coma for six years. I’m surprised you can even walk in your state.\n" +
+		"'Well, it’s not as easy as it looks…'",
+		"choices": [
+			{
+				"choice":"What year is it?",
+				"result":"whatYear"
+			},
+			{
+				"choice":"Can I leave?",
+				"result":"canILeave"
+			}
+
+		]
+
+	},
+
+	"canILeave": {
+		"Text":"Desk worker: Without authorization from a legal guardian, we can’t release you from the hospital. Let me see…\n" +
+		"The woman types into the computer, looking up her files.\n" +
+		"Desk worker: It seems both your guardians are deceased, " +
+		"and the orphanage you were placed under has been shut down for over three years now for misconduct.\n" +
+		"'What does that mean for me?'\n" +
+		"Desk worker: If you fill out this paperwork, you can be released momentarily.\n" +
+		"<i>You fill out the paperwork and hand it to the woman.</i>\n" +
+		"Desk worker: After we check your vitals, you are good to go.\n" +
+		"<i>The screen goes black, then comes back with M at the door.</i>\n" +
+		"Desk worker: Hope you feel better, Miss Rine.\n" +
+		"<i>You walk out the door. SCENE END.</i>"
+	},
+
+	"remainInBed": {
+		"Text":"<i>You stay in bed. After a while, a nurse comes into the room.</i> Nurse: You’re awake! How are you feeling?",
+		"choices": [
+			{
+				"choice":"I feel like crap. (truth)",
+				"result":"iFeelCrap"
+			},
+			{
+				"choice":"I feel fine. (lie)",
+				"result":"iFeelFine"
+			}
+
+		]
+
+	},
+
+	"iFeelCrap": {
+		"Text":"Nurse: Oh, let me get you some pain killers. I’ll be just a minute.\n" +
+		"<i>The nurse exits the room.</i>",
+		"choices": [
+			{
+				"choice":"Stay in bed.",
+				"result":"stayInBed"
+			},
+			{
+				"choice":"Attempt to leave.",
+				"result":"attemptToLeave"
+			}
+
+		]
+
+	},
+
+	"iFeelFine": {
+		"Text":"Nurse: That’s good… But don’t sit up too fast, you might feel faint.\n" +
+		"<i>The nurse comes over, helping you adjust.</i>\n" +
+		"'Thank you.'\n" +
+		"Nurse: Do you need anything?",
+		"choices": [
+			{
+				"choice":"Food.",
+				"result":"food"
+			},
+			{
+				"choice":"Water.",
+				"result":"water"
+			},
+			{
+				"choice":"I want to leave.",
+				"result":"wantToLeave"
+			}
+
+		]
+
+	},
+
+	"food": {
+		"Text":"Nurse: Right now, you won’t be able to handle solid food, but we can get you something to eat.\n" +
+		"<i>The nurse walks over to the door and presses a button, speaking into the device above.</i>\n" +
+		"Nurse: Room 128, tray delivery please.\n" +
+		"She sits down in the chair next to the bed to wait. After a minute or so another nurse comes" +
+		"into the room with a tray and places it on the bed before leaving. There is a cup with a straw" +
+		"poking out of it. You try a bit of the food.\n" +
+		"It’s kind of gross.\n" +
+		"'...Thanks.'",
+		"choices": [
+			{
+				"choice":"Water.",
+				"result":"water"
+			},
+			{
+				"choice":"I want to leave.",
+				"result":"wantToLeave"
+			}
+
+		]
+
+	},
+
+	"water": {
+		"Text":"Nurse: Alright, I’ll get you some.\n" +
+		"<i>She goes to the sink in the room and fills up a cup, giving it to M. M drinks a bit of it and sets it on the table next to the bed.</i>\n" +
+		"'Thanks.'",
+		"choices": [
+			{
+				"choice":"Food.",
+				"result":"food"
+			},
+			{
+				"choice":"I want to leave.",
+				"result":"wantToLeave"
+			}
+
+		]
+
+	},
+
+	"wantToLeave": {
+		"Text":"Nurse: Miss Rine, you need to rest! You aren’t in a healthy state right now.\n" +
+		"<i>'I'm fine.'</i>\n" +
+		"<i>You try to sit up, the nurse protesting.</i>\n" +
+		"Nurse: I suggest you <i>stay in your bed</i>.\n" +
+		"<i>You look at her, confused but persistent. You try to get up again, but are pushed down by the nurse.</i>\n" +
+		"Nurse: <i>Go back to sleep, little girl.</i>\n" +
+		"<i>You gasp, a shock going through your body at the nurse's touch. You fall unconscious.</i>\n" +
+		"SCENE END."
+
+	},
+
+	"stayInBed": {
+		"Text":"<i>You remain in bed, waiting. The nurse returns in a minute or so with pills and a cup of water.</i>\n" +
+		"Nurse: Here you are.\n" +
+		"<i>You take the cup and swallow the pills, gulping down the water. You look at the nurse.</i>\n" +
+		"Nurse: Better?\n" +
+		"<i>You start feeling sleepy, and lie back down. The nurse's expression twists.</i>\n" +
+		"Nurse: Goodnight, Miss Rine.\n" +
+		"<i>You fall unconscious.</i>\n" +
+		"SCENE END."
+	},
+
+	"attemptToLeave": {
+		"Text":"<i>You try getting out of bed, groaning in pain as you stand. You make your way to the door and look out, making sure" +
+		"the hall is clear. You walk into the foyer, avoiding eye contact with the woman at the main desk. You make your way to the exit.</i>\n" +
+		"Desk worker: Um, miss, you can't leave without written consent!\n" +
+		"<i>You exit anyway, slipping into the shadows.</i>\n" +
+		"SCENE END."
+	}
+
+
+}
